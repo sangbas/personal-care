@@ -50,7 +50,7 @@ class Order extends React.Component {
             this.setState({ beverage:'0' })
         }
         console.log(this.state.beverage)
-        fetch('http://localhost:8080/order', {
+        fetch('https://personal-care-bdf-be.herokuapp.com/order', {
           method: 'POST',   
           headers: {
             'Accept': 'application/json',

@@ -19,7 +19,7 @@ class Register extends React.Component {
         // event.preventDefault();
         // const data = new FormData(event.target);
         console.log(value)
-        fetch('http://localhost:8080/register', {
+        fetch('https://personal-care-bdf-be.herokuapp.com/register', {
           method: 'POST',   
           headers: {
             'Accept': 'application/json',
