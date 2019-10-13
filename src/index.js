@@ -9,6 +9,9 @@ import Entrance from './Entrance';
 import CheckIn from './CheckIn';
 import Order from './Order';
 import Admin from './Admin';
+import Scan from './Scan';
+import Refreshment from './Refreshment';
+import ExtraWhite from './ExtraWhite';
 import * as serviceWorker from './serviceWorker';
 
 // const routing = (
@@ -19,15 +22,19 @@ import * as serviceWorker from './serviceWorker';
 //       </div>
 //     </Router>
 //   )
+
 const routing = (
     <Router>
       <div>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={Register} />
         <Route path="/home" component={Home} />
         <Route path="/register" component={Register} />
         <Route path="/entrance" component={Entrance} />
         <Route path="/checkin" component={CheckIn} />
         <Route path="/order" component={Order} />
+        <Route path="/scan" component={Scan} />
+        <Route path="/extra-white" component={ExtraWhite} />
+        <Route path="/refreshment" component={Refreshment} />
         <Route path="/admin" component={Admin} />
       </div>
     </Router>

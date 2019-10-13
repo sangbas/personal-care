@@ -11,7 +11,7 @@ import niveaSmall from './assets/nivea_small.png';
 import niveaMen from './assets/nivea_men.png';
 import Artyom from './artyom.js';
 
-class Entrance extends React.Component {
+class ExtraWhite extends React.Component {
     state = {
         result: ''
     }
@@ -20,12 +20,11 @@ class Entrance extends React.Component {
         if (data) {
             const Jarvis = new Artyom();
             this.setState({
-                welcome: 'To Personal Care Training Ground',
-                enjoy:'Please Enjoy The Experience',
+                enjoy:'Please enjoy the extra white experience room',
                 result: 'Welcome, ' + data
             })
-            Jarvis.say("Welcome, "+ data );
-            Jarvis.say("TO PERSONAL CARE TRAINING GROUND, PLEASE ENJOY THE EXPERIENCE")
+            Jarvis.say("Hi, "+ data );
+            Jarvis.say("Please enjoy the extra white experience room")
             // window.open(data, "_top");
         }
         }
@@ -54,9 +53,6 @@ class Entrance extends React.Component {
                 {this.state.result}
             </Text>
             <Text textAlign="center" style={{color:"#fff",marginTop:40,fontFamily:"Nivea",fontSize:40}}>
-                {this.state.welcome}
-            </Text>
-            <Text textAlign="center" style={{color:"#fff",marginTop:40,fontFamily:"Nivea",fontSize:40}}>
                 {this.state.enjoy}
             </Text>
           
@@ -67,4 +63,4 @@ class Entrance extends React.Component {
         </Grommet>
     }
 }
-export default Entrance
+export default ExtraWhite
